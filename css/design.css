@@ -1,0 +1,99 @@
+li {
+    font-family: 'Bangers', cursive;
+    font-size: 5vw;
+}
+.wrap {
+    top: 0;
+    bottom:  0;
+    left:  0;
+    right:  0;
+    margin:  auto;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+
+    opacity: 0;
+    transition: all 3000ms;
+}
+.Top-Profile, .Top-Portfolio, .Top-Contact {
+    display: inline-block;
+    border: black double 5px;
+    margin:20px;
+    padding:10px;
+    cursor: pointer;
+}
+.wrap.done{
+    opacity : 1;
+}
+.Top {
+    background-image: url("../Img/Top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-bottom: 140px;
+}
+.scroll1, .scroll2, .scroll3 {
+    font-family: 'Bangers', cursive;
+    color: black;
+    margin: 50px;
+    opacity: 0;
+    transition: all 3000ms;
+    font-size: 5vw;
+}
+.scroll1 {
+    background-image: url("../Img/Profile.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left:6vw;
+}
+.scroll2 {
+    background-image: url("../Img/Portfolio.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left:6vw;
+}
+.scroll3 {
+    background-image: url("../Img/Contact.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left:6vw;
+}
+.scroll1.done, .scroll2.done, .scroll3.done{
+    opacity : 1;
+    transform: translateX(50px);
+}
+section {
+    margin-bottom: 100px;
+}
+p {
+    font-size: 2vw;
+    font-family: "M PLUS 1p";
+    padding-left: 100px;
+}
+.button-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: coral;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 500ms;
+}
+.button-top.done {
+    opacity: 1;
+}
+img.twitter-img {
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding-left: 100px;
+}
+p.twitter {
+    padding-left: 250px;
+    padding-top: 30px;
+}
